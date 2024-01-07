@@ -3,7 +3,7 @@ import Searchbar from './SearchBar/SearchBar.jsx';
 import ImageGallery from './ImageGallery/ImageGallery.jsx';
 import Button from './Button/Button.jsx';
 import Modal from './Modal/Modal.jsx';
-import Loader from './Loader.jsx';
+import Loader from './Loader/Loader.jsx';
 import { getImages } from 'api/products.js';
 import {
   checkResponse,

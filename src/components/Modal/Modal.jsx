@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Loader from 'components/Loader';
+import Loader from 'components/Loader/Loader';
 import PropTypes from 'prop-types';
 import css from './Modal.module.css';
 
@@ -20,14 +20,9 @@ export default class Modal extends Component {
     const { isLoaded } = this.state;
     const { visibleData, onCloseModal } = this.props;
     return (
-      <div className={css.overlay}>
-        <button
-          type="button"
-          className={css.modalCloseBtn}
-          onClick={onCloseModal}
-        >
-          x
-        </button>
+      <div className={css.overlay}
+      onClick={onCloseModal}>
+       
         <div>
           {!isLoaded && <Loader />}
           <div className={!isLoaded ? css.hidden : css.modal}>
